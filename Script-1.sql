@@ -9,9 +9,7 @@ CREATE TABLE IF NOT EXISTS genre_1 (
 
 CREATE TABLE IF NOT EXISTS artist_1 (
 	id serial PRIMARY KEY,
-	first_name varchar(40) NOT NULL,
-	second_name varchar(40) NOT NULL,
-	alias varchar(40));
+	alias varchar(60));
 
 CREATE TABLE IF NOT EXISTS collection_1 (
 	id serial PRIMARY KEY,
