@@ -35,8 +35,7 @@
  
 -- 4. Все исполнители, которые не выпустили альбомы в 2020 году
   
-    SELECT art_1.first_name || ' ' || art_1.second_name "Имя, фамилия",
-           art_1.alias "Псевдоним/группа"
+    SELECT art_1.alias "Псевдоним/группа"           
       FROM artist_1 AS art_1
       JOIN albums_artists AS a_a 
         ON a_a.artist_id = art_1.id 
@@ -90,8 +89,7 @@
     
 -- 8. Исполнитель(и), написавший(ие) самый короткий трек 
      
-    SELECT a_1.first_name || ' ' || a_1.second_name "Имя, фамилия",
-           a_1.alias "Псевдоним/группа"
+    SELECT a_1.alias "Псевдоним/группа"           
       FROM artist_1 AS a_1
       JOIN albums_artists AS a_a 
         ON a_a.artist_id = a_1.id 
