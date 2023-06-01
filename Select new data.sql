@@ -47,9 +47,7 @@ SELECT
 FROM
 	artist_1 a 
 WHERE 
-	(length(first_name) > 0 AND first_name NOT LIKE '% %' AND length(second_name) = 0 AND length(alias) = 0) OR 
-	(length(second_name) > 0 AND second_name  NOT LIKE '% %' AND length(first_name) = 0 AND length(alias) = 0) OR 
-	(length(alias) > 0 AND alias NOT LIKE '% %' AND length(first_name) = 0 AND length(second_name) = 0)	
+	(length(alias) > 0 AND alias NOT LIKE '% %')	
 	
 	;
 

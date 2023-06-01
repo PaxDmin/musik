@@ -206,8 +206,8 @@ VALUES
 
 INSERT INTO albums_artists (artist_id, album_id)
 VALUES 
-	(1,1),
-	(2,2),
+	(3,1),
+	(4,2),
 	(3,3),
 	(4,4),
 	(5,5),
