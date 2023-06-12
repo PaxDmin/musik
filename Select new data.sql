@@ -53,10 +53,10 @@ WHERE
 
 -- Выборка треков, названия которых содержат слово "мой" или "my"
 SELECT
-	name "Название"
+	name "Название трека"
 FROM
 	track_1
 WHERE 
-	lower(name) LIKE '%мой%' OR 
-	lower(name) LIKE '%my%'
-	;
+	name ILIKE '% my' OR name ILIKE 'my %' OR name ILIKE '% my %' OR name ILIKE 'my' OR
+	name ILIKE 'мой %' OR name ILIKE '% мой' OR name ILIKE 'мой' OR name ILIKE '% мой %'
+;
