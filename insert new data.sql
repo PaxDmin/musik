@@ -80,7 +80,7 @@ INSERT INTO artist_1 (alias)
 VALUES 
 	('Miles Davis'),
 	('Duke Ellington'),
-	('Louis', 'Armstrong'),
+	('Louis Armstrong'),
 	('Аида Ведищева'),
 	('Поющие гитары'),
 	('Анна Герман'),
